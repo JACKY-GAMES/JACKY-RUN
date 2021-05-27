@@ -14,7 +14,7 @@ function jump() {
     dino.classList.remove("jump-animation"), 500);
 }
 
-document.addEventListener('click', (event) => {
+document.addEventListener('keypress', (event) => {
   if (!dino.classList.contains('jump-animation')) {
 	  JUMPSOUND.play();
     jump();
